@@ -1,0 +1,35 @@
+.stores-warpper{
+    margin: 50px 20%;
+    padding: 30px 0;
+    gap: 30px;
+    border-top: groove .5em var(--color-generic01);
+    border-bottom: ridge .5em var(--color-generic01);
+}
+.store:not(:last-child){
+    padding-bottom: 30px;
+    border-bottom: solid 2px var(--color-black);
+}
+.store-info table{
+    border-spacing: 15px;
+}
+.info-title,.store-info table th,.store-info table td{
+    vertical-align: baseline;
+    text-align: start;
+}
+.kakaomap-warpper{
+    width: 90%;height: 90%;
+    margin: auto;
+    border: solid 2px var(--color-black);
+}
+.info-title strong{
+    font-size: 1.2em;
+}
+.flexslider{
+    margin: 0 0 0 0;
+}
+
+/*=================모바일 화면은 여기서 변경====================*/
+
+@media screen and (max-width:630px) {
+    .stores-warpper{margin: 10px 5%;}
+}

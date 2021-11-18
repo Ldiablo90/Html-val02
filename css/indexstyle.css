@@ -1,0 +1,76 @@
+/*==================== index.main ====================*/
+/*==================== main-slider01 ====================*/
+
+.slider01-warpper{
+    position: relative;
+    overflow: hidden;
+    border-top: 1px rgba(0, 0, 0, .5) solid;
+}
+.slider01-warpper > input{display: none;}
+
+.slide01-labels{
+    display: flex;
+    position: absolute;
+    bottom: 50px;left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.slide01-labels label{
+    min-width: 12px;height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.slide01-labels label:not(:last-child){margin-right: 15px;}
+
+.slide01-contents{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    transition: 1.3s ease-in-out;
+}
+
+.slide01-contents img{width: 100vw;}
+
+.slide01-labels .show{background-color: rgba(255, 255, 255, 0.5);}
+
+
+/*===================== main-content ========================*/
+
+.card-warp{
+    align-items: center;
+    margin: 35px 0;
+    gap: 20px;
+}
+.card-content{
+    width: 70%;
+    background-color: var(--color-generic07);
+    font-family: 'heasol210_R', Fallback, sans-serif;
+    box-shadow: 0 0 1em var(--color-generic06);
+    opacity: 0;
+    transition: all .5s ease;
+    transform: translateY(50px);
+}
+.card-content.show{
+    opacity: 1;
+    transform: none;
+}
+.card-img{height: 300px;width: auto;}
+.card-img img{height: 100%;}
+.card-text01{
+    padding: 0 8%;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+
+
+/*=================모바일 화면은 여기서 변경====================*/
+
+@media screen and (max-width:630px) {
+    .card-warp{margin: 0;}
+    .card-content{width: 100%;background-color: var(--color-whiht);}
+    .card-img{width: 100%;height: auto;}
+    
+    .content-text01{justify-content: flex-end;}
+    .content-map{width: 270px;}
+}

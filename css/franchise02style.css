@@ -1,0 +1,53 @@
+/*=======================franchisepage02.html===========================*/
+.step01{background-image: url(../img/defualt900x600img.png);}
+.step02{background-image: url(../img/defualt900x600img.png);}
+.step03{background-image: url(../img/defualt900x600img.png);}
+.step04{background-image: url(../img/defualt900x600img.png);}
+.step05{background-image: url(../img/defualt900x600img.png);}
+.step06{background-image: url(../img/defualt900x600img.png);}
+.step07{background-image: url(../img/defualt900x600img.png);}
+.step08{background-image: url(../img/defualt900x600img.png);}
+.step09{background-image: url(../img/defualt900x600img.png);}
+.step10{background-image: url(../img/defualt900x600img.png);}
+
+
+.step{
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+.step .step-title{font-size: 1.7em;transition: all 1s ease;}
+.step .step-content{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.step.show{flex: 5;}
+
+.step.show .step-title{font-size: 1em;}
+
+.step.show .step-content{opacity: 1;}
+
+.opening-cost .unit{text-align: right;}
+.opening-cost{
+    width: 80%;
+    margin: 2% auto;
+}
+.opening-cost table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.opening-cost th{
+    border-top: 3px solid #d17e2b;
+    border-bottom: 3px solid #d17e2b;
+}
+.opening-cost tr:last-child td{
+    background-color: #ffcb2b;
+}
+
+/*=================모바일 화면은 여기서 변경====================*/
+
+@media screen and (max-width:630px) {
+    .step{flex: 1 0 45%;}
+    
+}
